@@ -32,7 +32,7 @@ Vulnerability #2: SQL injection
 
 - [ ] Summary: The sql injection is of the form of changing the url so that one of the params has some sort of delay on it to signify the attacker has accessed the database. This is of the form of a valid blind sql injection.
 - [ ] GIF Walkthrough: 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/rahul-tuladhar/codepathweek8/blob/master/gifs/lab8_sql_blue.gif)
 - [ ] Steps to recreate:
     - From the home public page, go to find a salesperson tab, then click on one of the sales persons listed
     - From the given url, input the sql injection ' OR SLEEP(5)=0;--'
