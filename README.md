@@ -20,7 +20,7 @@ Vulnerability #1: Session Hijacking
 
 - [ ] Summary: There is a session hijacking vulnerability where you can log into the site given another user's authenticated sessionid. 
 - [ ] GIF Walkthrough: 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/rahul-tuladhar/codepathweek8/blob/master/gifs/lab8_session_hijack_blue.gif)
 - [ ] Steps to recreate: 
     - Create a target and attacker, using two difference browsers
     - Have the target log in to the site
@@ -43,7 +43,7 @@ Vulnerability #2: SQL injection
 Vulnerability #1: XSS
 - [ ] Summary: Here a simple script with an alert can be embedded into the feedback as a stored XSS. The stored script will be activated when the admin logs into and visits the feedback page from the staff site.
 - [ ] GIF Walkthrough: 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/rahul-tuladhar/codepathweek8/blob/master/gifs/lab8_xss_green.gif)
 - [ ] Steps to recreate:
     - From the homepage, go to the Contact page
     - Enter in some information into the Your Name and Your Email fieled
@@ -56,7 +56,7 @@ Vulnerability #2: User Enumeration
 - [ ] Summary: When you attempt to login with a real username, the text “Log in was unsuccessful” is bolded. When the username is not within the database of the site, the text “Login in was unsuccessful” is not bolded. The developer had two different html styles for the different responses which someone could use to enumerate users. 
 
 - [ ] GIF Walkthrough: 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/rahul-tuladhar/codepathweek8/blob/master/gifs/lab8_user_enumeration_green.gif)
 - [ ] Steps to recreate:
     - Go to the login page
     - Enter a username that you know would be in the database
@@ -68,7 +68,7 @@ Vulnerability #2: User Enumeration
 Vulnerability #1: IDOR
 - [ ] Summary: You can indirectly reference site pages that should not be accessible by changing the id in the URL.
 - [ ] GIF Walkthrough: 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/rahul-tuladhar/codepathweek8/blob/master/gifs/lab8_idor_red.gif)
 - [ ] Steps to recreate:
     - Go to the Find a Salesperson tab
     - Click on any one of the salespersons
@@ -78,7 +78,7 @@ Vulnerability #1: IDOR
 Vulnerability #2: CSRF
 - [ ] Summary: An attacker can forge the csrftoken of a request along with constructing a form to then edit some parts of the web page that they wouldn't normally have access to.
 - [ ] GIF Walkthrough: 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/rahul-tuladhar/codepathweek8/blob/master/gifs/lab8_csrf_red.gif)
 - [ ] Steps to recreate:
     - Go to a program which allows you to construct requests with form attributes such as Burp
     - Construct the post request with the appropriate params, include csrftoken=1 or any other number since the site doesn't have csrf protection
