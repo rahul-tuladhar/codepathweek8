@@ -39,3 +39,4 @@ Vulnerability #2: CSRF
 
 Describe any challenges encountered while doing the work
 
+Some of the challenges were figuring out how best to capture the gif for showing the exact exploit. There wsa also some confusion on what I was supposed to see in the user enumeration and the sql injection.
